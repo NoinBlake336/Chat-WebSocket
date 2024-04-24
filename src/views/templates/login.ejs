@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Chat</title>
+    <!-- Tailwind css CDN -->
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/6074008e21.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="flex justify-center items-center h-screen bg-red-500">
+        <div id="form" class="block bg-white border p-6 rounded-xl shodow-md shadow-gray-100 w-90 relative">
+            <div id="loader" class="w-10 h-10 absolute hidden" >
+                <i class="fa-solid fa-rotate fa-spin fa-spin-reverse text-4xl text-red-500"></i>
+            </div>
+            <form action="" class="mb-10">
+                <h1 class="text-red-500 text-3xl font-semibold my-4 flex justify-center mb-4">Login</h2>
+                    <div id="messageError" class="bg-red-500 w-30 h-8 rounded-md text-center p-1 text-white font-semibold  ease-in duration-100 opacity-0">
+                        
+                    </div>
+                    <!-- email -->
+                    <label for="email" class="text-sm">Email</label><br>
+                    <input type="emial" name="" id="email"
+                    class="h-8 w-full rounded-md border border-gray-400 text-sm pl-2 bg-transparent outline-red-500 shadow-sm">
+                    <!-- password -->
+                    <label for="password" class="text-sm">Password</label><br>
+                    <input type="password" name="" id="password"
+                    class="h-8 w-full rounded-md border border-gray-400 text-sm pl-2 bg-transparent outline-red-600 shadow-sm">
+                    <!-- confirm password -->
+                    <label for="confirmPassword" class="text-sm">Confirm Password</label><br>
+                    <input type="password" name="" id="confirmPassword"
+                    class="h-8 w-full rounded-md border border-gray-400 text-sm pl-2 bg-transparent outline-red-600 shadow-sm">
+                    <!-- Sign up / submit button -->
+                    <button id="signUp"
+                    class="mt-2 bg-red-500 mb-2 w-full h-10 cursor-pointer text-white rounded-md hover:bg-red-700 hover:outline outline-2 outline-red-600 outline-offset-2 text-sm"
+                >Enviar</button>
+                <p class="text-xs my-2 flex justify-center">If you don't have an account? <a href="http://localhost:3000/register" class="text-red-500">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="../js/index.login.js"></script>
+</body>
+
+</html>
