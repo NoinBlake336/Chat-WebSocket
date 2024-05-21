@@ -54,7 +54,6 @@ Chat API es una plataforma de chat que permite a los usuarios comunicarse entre 
 - Node.js
 - MongoDB
 
-## Uso
 
 ### Funcionalidades del Usuario
 
