@@ -6,12 +6,12 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'API de Ejemplo',
+      title: 'Chat API',
       version: '1.0.0',
-      description: 'Documentación de la API de Ejemplo',
+      description: 'Documentacion de Chat Online ',
     },
   },
-  apis: ['./components/**/*.js'], // Ruta donde se encuentran las definiciones de tus rutas
+  apis: ['./src/components/**/*.js'], // Ruta donde se encuentran las definiciones de tus rutas
 };
 
 const specs = swaggerJsdoc(options);
