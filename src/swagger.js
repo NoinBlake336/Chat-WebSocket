@@ -11,7 +11,7 @@ const options = {
       description: 'Documentación de la API de Ejemplo',
     },
   },
-  apis: ['./src/components/**/*.js'], // Ruta donde se encuentran las definiciones de tus rutas
+  apis: ['./components/**/*.js'], // Ruta donde se encuentran las definiciones de tus rutas
 };
 
 const specs = swaggerJsdoc(options);
