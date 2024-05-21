@@ -8,13 +8,13 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer);
 
-const {config} = require('./src/config/config');
-const Router = require('./src/routers');
+const {config} = require('./config/config');
+const Router = require('./routers');
 const bodyParser = require('body-parser');
-const { logErrors, boomErrorHandler, errorHandler } = require('./src/middlewares/error.handler');
-const connectDB = require('./src/db/libs/mongo');
-const authenticateToken = require('./src/middlewares/authenticate.token');
-require('./src/utils/auth')
+const { logErrors, boomErrorHandler, errorHandler } = require('./middlewares/error.handler');
+const connectDB = require('./db/libs/mongo');
+const authenticateToken = require('./middlewares/authenticate.token');
+require('./utils/auth')
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(bodyParser.json());
