@@ -62,8 +62,10 @@ const login = async(e)=>{
                 email.value = "";
                 password.value = "";
                 confirmPassword.value = "";
-                console.log(response.json());
-                return response.json();
+                response.json().then(userData => {
+                    localStorage.setItem('user', JSON.stringify(userData))
+                } )
+                window.location = 'profile'
             }
 
             if(response.status = 401){

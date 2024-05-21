@@ -1,5 +1,5 @@
 const {Schema,model} = require('mongoose');
-const { transformObject } = require('../../../middleware/tranform.object');
+const { transformObject } = require('../../../middlewares/tranform.object');
 
 const chatSchema = new Schema({
     users:[{

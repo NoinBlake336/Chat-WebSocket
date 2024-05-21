@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   purge:false,
-  content: ["./src/public/Chat/index.html","./src/public/Chat/register.html"],
+  content: ["./src/views/templates/**.ejs" ],
   theme: {
     extend: {
       colors:{
